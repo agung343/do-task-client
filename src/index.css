@@ -1,0 +1,124 @@
+:root {
+  --grey-primary-200: #ababab;
+  --grey-primary-500: #424242;
+  --grey-primary-700: #4b4b4b;
+
+  --yellow-primary-500: #ffe921;
+  --yellow-primary-200: #d1bc00;
+
+  --warning-primary-500: #ff2a6c;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0
+}
+
+main {
+  min-width: 320px;
+  min-height: 90vh;
+}
+
+.app {
+  display: flex;
+  width: 100vw;
+  height: 70vh;
+  margin: 2rem auto;
+  align-items: center;
+}
+
+.app-banner {
+  width: 60%;
+  gap: 2rem;
+  margin-left: 2rem;
+}
+
+.banner-title {
+  color: var(--yellow-primary-500);
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.banner-text {
+  color: var(--yellow-primary-200);
+  font-size: 2rem;
+}
+
+.login-form {
+  width: 30%;
+  min-height: 18rem;
+  overflow-x: hidden;
+  background-color: var(--yellow-primary-200);
+  text-align: center;
+  border-radius: 20px;
+}
+
+.login-text {
+  color: var(--grey-primary-700);
+  font-size: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form input {
+  width: 90%;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  color: var(--yellow-primary-500);
+  border: 1px solid var(--grey-primary-200);
+  border-radius: 8px;
+}
+
+.form input::placeholder {
+  font-size: 1.5rem;
+}
+
+.actions {
+  margin-top: 0rem;
+}
+
+.actions .login-button {
+  width: 30%;
+  padding: 0.25rem;
+  color: var(--yellow-primary-500);
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  margin-top: 0rem;
+}
+
+.actions .login-button:hover {
+  color: #242424;
+  background-color: var(--yellow-primary-500);
+  cursor: pointer;
+}
+
+.actions > p {
+  margin: 0.25 0rem;
+  color: #242424;
+  border-top: 1px solid #242424;
+}
+
+.actions a {
+  text-decoration: none;
+  color: blueviolet;
+}
+
